@@ -31,52 +31,62 @@ const data = [
     name: "Social Media App",
     description: "A social network API that uses Mongo DB as a database, Mongoose ODM, Express.JS and seeds data through insomnia. It allows you to create your own user, share your thoughts, add others as friends and add reactions to your friends thoughts.",
     view: "https://github.com/Laurencvengros/18_Social_Media_API"
-  }
+  },
+  
 ];
 
 
 
-const CardListItem = props => {
-  return (
+// const CardListItem = props => {
+//   return (
     
+//       <Row xs={1} lg={3} className="g-4">
+//         {Array.from({ length: 1 }).map((_, idx) => (
+//           <Col>
+//             <Card  key={idx}  >
+             
+//               <Card.Img variant="top" src="holder.js/100px160" />
+//               <Card.Body>
+//               <p className="project-title" id="card-title">{props.data.name}</p>
+//                 <Card.Text>
+//                 ({props.data.description})
+//                 </Card.Text>
+//                 <Card.Text>
+//                 <a href={props.data.view}> <Button variant="dark">View Code</Button></a> 
+//                 </Card.Text>
+//               </Card.Body>
+//             </Card>
+//           </Col>
+//         ))}
+//       </Row>
+//     );
+//   }
 
-    <Card style={{ width: '18rem' }}> 
-      
-      <Card.Title>
-            <p className="project-title" id="card-title">{props.data.name}</p>
-      </Card.Title>
-            <Card.Text>
-                  ({props.data.description})
-            </Card.Text>
-            <Card.Text>
-            <a href={props.data.view}> <Button variant="dark">View Code</Button></a> 
-            
-            </Card.Text>
-            
-      
-    </Card>
-  );
-}
+    
 
 
 const Projects = () => {
-  return (
-    <Container className="main">
-      <Row Row lg={1}>
-        <Col className="d-flex">
-          {data.map((data) => (
-            <CardListItem
-            data={data} key={data.id}
-              
-            />
-          ))}
-        </Col>
-      </Row>
-      
-    </Container>
-  );
- 
-};
+
+    return (
+      <Container>
+          <Row>
+              {data.map((data, k) => (
+                  <Col key={k} xs={12} md={4} lg={3}>
+                      <Card >
+                          <Card.Img src="https://via.placeholder.com/150x75" />
+
+                          <Card.Body>
+                              <Card.Title>{data.name}</Card.Title>
+                              <Card.Text>({data.description})</Card.Text>
+                          </Card.Body>
+                      </Card>
+                  </Col>
+              ))}
+          </Row>
+      </Container>
+  )
+}
+    
 
 
 export default Projects;
