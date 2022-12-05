@@ -1,35 +1,23 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Row from 'react-bootstrap/Row';
+import  Home  from './Home';
+import About from './About'
+import Navigation from './Navigation';
+import Projects from './Projects'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
-
-
-function Header() {
-    return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Container>
-            <Row>
-                <Navbar.Brand href="#home">Home</Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                
-                    
-            </Row>
-            <Row >
-                <Nav >
-                <Nav.Link href="#deets">About</Nav.Link>
-                <Nav.Link  href="#">Projects</Nav.Link>
-                <Nav.Link  href="#">Resume</Nav.Link>
-                <Nav.Link  href="#">Contact</Nav.Link>
-                </Nav>
-            
-          </Row>
-        </Container>
-      </Navbar>
+const Header = () =>{
+    return(
+        
+        <Router>
+            <Navigation />
+            <Routes>
+            <Route path="/about"  element={<About/>}/>
+            <Route path="/home"  element={<Home/>}/>
+            <Route path="/projects"  element={<Projects/>}/>
+            </Routes>
+        </Router>
     );
-  }
-  
-  export default Header;
-  
+};
+
+export default Header;
