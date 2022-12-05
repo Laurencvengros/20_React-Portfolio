@@ -4,6 +4,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import  Container from 'react-bootstrap/Container'
+
 
 const data = [
   {
@@ -36,6 +38,8 @@ const data = [
 
 const CardListItem = props => {
   return (
+    
+
     <Card style={{ width: '18rem' }}> 
       
       <Card.Title>
@@ -57,12 +61,21 @@ const CardListItem = props => {
 
 const Projects = () => {
   return (
-    <div>
-      {data.map(data => {
-        return <CardListItem data={data} key={data.id} />;
-      })}
-    </div>
+    <Container className="main">
+      <Row Row lg={1}>
+        <Col className="d-flex">
+          {data.map((data) => (
+            <CardListItem
+            data={data} key={data.id}
+              
+            />
+          ))}
+        </Col>
+      </Row>
+      
+    </Container>
   );
+ 
 };
 
 
