@@ -38,7 +38,10 @@ const data = [
 const styles ={
   cardStyle: {
     marginTop: '20px',
-    height: '30rem'
+    height: '30rem',
+    width: '20rem',
+    textAlign: 'center',
+    
   },
   textStyle: {
     marginTop: '30px'
@@ -46,10 +49,11 @@ const styles ={
     
   },
   linkStyle: {
-    display: 'flex',
-    height: '50px',
-    alignItems: 'center',
-    marginBottom: '50px'
+   
+    marginTop: '30px'
+  },
+  wrapper: {
+    padding: '30px'
   }
 }
 
@@ -59,7 +63,7 @@ const Projects = () => {
       <Container>
           <Row>
               {data.map((data, k) => (
-                  <Col key={k} xs={12} md={4} lg={3}>
+                  <Col key={k} xs={12} md={6} lg={4} style={styles.wrapper}>
                       <Card style={styles.cardStyle}>
                           <Card.Img src="https://via.placeholder.com/150x75" />
 
