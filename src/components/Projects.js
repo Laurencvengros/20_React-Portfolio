@@ -32,34 +32,3 @@ const data = [
 
 
 
-const CardListItem = props => {
-  return (
-    <div className="card" style={{ width: '18rem' }}> 
-      
-      <div className="content">
-            <p className="project-title" id="card-title">{props.data.name}</p>
-            <p>
-            <a href={props.data.view}><img src="https://img.icons8.com/color/48/000000/github--v1.png" alt="Repository" id="project-icon"/></a> 
-            
-            </p>
-            <p id="topics">
-                  ({props.data.description})
-              </p>
-      </div>
-    </div>
-  );
-}
-
-
-const Projects = () => {
-  return (
-    <div>
-      {data.map(data => {
-        return <CardListItem data={data} key={data.id} />;
-      })}
-    </div>
-  );
-};
-
-
-export default Projects;
