@@ -15,14 +15,16 @@ const styles ={
 function Navigation(){
 
 
-  const [color, setColor] = useState('purple'); 
+  const [color, setColor] = useState('grey'); 
 
-  const handleHighlightTab = () => {
+  const handleHighlightTab = (e) => {
     
-    setColor({
-      color: 'green'
-    });
-  }
+      console.log('default prevented')
+      setColor('green')
+      e.preventDefault()
+
+    };
+  
 
   return (
  
