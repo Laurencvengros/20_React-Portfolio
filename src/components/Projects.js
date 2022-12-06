@@ -71,7 +71,7 @@ const Projects = () => {
                               <Card.Title style={styles.textStyle}>{data.name}</Card.Title>
                               <Card.Text style={styles.textStyle}>({data.description})</Card.Text>
                               
-                                <a href={data.view}> <Button style={styles.linkStyle} variant="dark">View Code</Button></a> 
+                                <a href={data.view}> <Button variant="dark" className='mt-auto' >View Code</Button></a> 
                             
                           </Card.Body>
                       </Card>
