@@ -2,8 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ParticlesBg  from "particles-bg";
 import '../App.css';
-import Button from 'react-bootstrap/Button';
- import { Link } from "react-router-dom";
+import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import myResume from '../assets/images/resume.pdf'
 
 const styles={
     skills:{
@@ -23,11 +23,8 @@ const styles={
 const Resume = () =>{
     return(
         <React.Fragment> 
-            <div>
-            <h1> Download my Resume</h1>
-            <a href="../assets/images/resume.pdf"> <Button variant="dark" className='mt-auto' >View App</Button></a> 
-            </div>
-
+            
+           
 
             <div className="container" >
                 <ParticlesBg type="cobweb" bg={true} />
@@ -64,6 +61,13 @@ const Resume = () =>{
                     </div>
                 </div>
             </div>
+            <MDBContainer className="mt-5">
+      <MDBRow>
+        <MDBCol md="12">
+          <embed id="Resume" src={myResume} width="100%" height="750px" />
+        </MDBCol>
+      </MDBRow>
+    </MDBContainer>
         </React.Fragment> 
     )
 }
