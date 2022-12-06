@@ -12,25 +12,30 @@ const data = [
     id: 1,
     name: "Level Up Fitness",
     description: "A full stack application to plan your workouts using Node, Express, MySql and Handlebars to build RESTful APIs",
-    view: "https://github.com/Laurencvengros/Project_2"
+    view: "https://github.com/Laurencvengros/Project_2",
+    deploy: "https://github.com/Laurencvengros/Project_2"
   },
   {
     id: 2,
     name: "JATE Text Editor",
     description: "A text editor appliaction that meets PWA criteria and runs both online and offline.",
-    view: "https://pacific-thicket-62202.herokuapp.com/"
+    view: "https://pacific-thicket-62202.herokuapp.com/",
+    deploy: "https://pacific-thicket-62202.herokuapp.com/"
   },
   {
     id: 3,
     name: "ORM E-Commerce",
     description: "A node.js application that uses and Express.js server and MySQL database for a backend Ecommerce site. ",
-    view: "https://github.com/Laurencvengros/ORM_E-Commerce"
+    view: "https://github.com/Laurencvengros/ORM_E-Commerce",
+    deploy: "https://github.com/Laurencvengros/ORM_E-Commerce"
   },
   {
     id: 4,
     name: "Social Media App",
     description: "A social network API that uses Mongo DB as a database, Mongoose ODM, Express.JS and seeds data through insomnia.",
-    view: "https://github.com/Laurencvengros/18_Social_Media_API"
+    view: "https://github.com/Laurencvengros/18_Social_Media_API",
+    deploy: "https://github.com/Laurencvengros/18_Social_Media_API"
+
   },
   {
     id: 5,
@@ -43,7 +48,8 @@ const data = [
     id: 6,
     name: "Team Profile Generator",
     description: "A Node.js application that generates an HTML page that displays information from your terminal.",
-    view: "https://github.com/Laurencvengros/Team_Profile_Generator"
+    view: "https://github.com/Laurencvengros/Team_Profile_Generator",
+    deploy: "https://github.com/Laurencvengros/Team_Profile_Generator"
   }
   
   
@@ -87,7 +93,7 @@ const Projects = () => {
                               <Card.Text style={styles.textStyle}>({data.description})</Card.Text>
                               
                                 <a href={data.view}> <Button variant="dark" className='mt-auto' >View Code</Button></a> 
-                                <a href={data.deploy}> <Button variant="dark" className='mt-auto' >View Deployed App</Button></a> 
+                                <a href={data.deploy}> <Button variant="dark" className='mt-auto' >View App</Button></a> 
                           </Card.Body>
                       </Card>
                   </Col>
