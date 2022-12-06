@@ -2,7 +2,8 @@ import React from 'react';
 import  Home  from './Home';
 import About from './About'
 import Navigation from './Navigation';
-import Projects from './Projects'
+import Projects from './Projects';
+import Resume from './Resume'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -16,6 +17,7 @@ const Header = () =>{
             <Route path="/about"  element={<About/>}/>
             <Route path="/home"  element={<Home/>}/>
             <Route path="/projects"  element={<Projects/>}/>
+            <Route path="/resume"  element={<Resume/>}/>
             </Routes>
         </Router>
     );
