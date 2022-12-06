@@ -37,9 +37,9 @@
   }
 }
 
-/* .tab{
-  background-color: white
-} */
+.tab{
+  margin-right: 10px
+}
 
 
 .wrap-circles {
@@ -77,6 +77,9 @@
 }
 .circle.per-90{
   background-image: conic-gradient(rgb(255, 187, 0) 90%, rgb(170, 167, 167) 0);
+}
+.circle.per-60{
+  background-image: conic-gradient(rgb(255, 187, 0) 60%, rgb(170, 167, 167) 0);
 }
 .circle .inner {
   display: flex;

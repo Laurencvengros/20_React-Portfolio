@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 // import { Link } from "react-router-dom";
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import Container from 'react-bootstrap/Container';
-// import Nav from 'react-bootstrap/Nav';
-// import Navbar from 'react-bootstrap/Navbar';
-// import '../App.css'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import '../App.css'
 
 const styles ={
   rightNav: {
@@ -16,70 +16,56 @@ const styles ={
 
 function Navigation(){
 
-  const [isActive, setIsActive] = useState(false);
+  const [currentLink, setCurrentLink] = useState('');
 
-  const handleClick = (e, ) => {
-    
-    
-    (e).preventDefault();
-
-    setIsActive(true);
-  };
+  let a = {};
+  let b = {};
+  let c = {};
+  let d = {};
+  let e = {};
+  
+  switch(currentLink){
+  case 'home':
+   a= { backgroundColor: 'red'};
+   break;
+  case 'about':
+   b= { backgroundColor: 'blue'};
+   break;
+  case 'projects':
+   c= { backgroundColor: 'green'};
+   break;
+  case 'resume':
+   d= { backgroundColor: 'yellow' };
+   break;
+  case 'contact':
+   e= { backgroundColor: 'cyan'};
+   break;
+  default:
+   a = {}
+}
+  
 
   
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a className="navbar-brand" href="/home">Home</a>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-  <div className="collapse navbar-collapse" id="navbarNav">
-    <ul className="navbar-nav">
-      <li style={{backgroundColor: isActive ? 'salmon' : '', color: isActive ? 'white' : ''}}
-        onClick={handleClick}>
-        <a className="nav-link" href="/about">About </a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="/projects">Projects</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="/resume">Resume</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link " href="/contact">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+
     
-  //  <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-  //     <Container>
-  //        <Navbar.Brand  href="/home" style={styles.rightNav}>Lauren Cvengros</Navbar.Brand>
-  //        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  //         <Navbar.Collapse id="responsive-navbar-nav">
-  //           <Nav className="ms-auto">
-  //           <NavLink
-  //                 activeClassName="active"
-  //                 className={"navbarChange"}
-  //                 to="/about"
-  //             >
-  //                 About
-  //             </NavLink>
-             
-  //             <NavLink
-  //                 activeClassName="active"
-  //                 className={"navbarChange"}
-  //                 to="/projects"
-  //             >
-  //                 Projects
-  //             </NavLink>
-  //             <Nav.Link href="/resume">Resume</Nav.Link>
-  //             <Nav.Link href="/contact">Contact</Nav.Link>
-  //           </Nav>
-  //         </Navbar.Collapse>
-  //      </Container>
-  //   </Navbar>
+   <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Container>
+      <NavLink to="/home" style={a} onClick={() => setCurrentLink('home')}>Lauren Cvengros</NavLink>
+         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ms-auto tab" >
+              
+                <NavLink to="/about" style={b} onClick={() => setCurrentLink('about')}>About</NavLink>
+              
+                <NavLink to="/projects" style={c} onClick={() => setCurrentLink('projects')}>projects</NavLink>
+                <NavLink to="/resume" style={d} onClick={() => setCurrentLink('resume')}>Resume</NavLink>
+                <NavLink to="/contact" style={e} onClick={() => setCurrentLink('contact')}>Contact</NavLink>
+            </Nav>
+          </Navbar.Collapse>
+       </Container>
+    </Navbar>
   );
 }
 
