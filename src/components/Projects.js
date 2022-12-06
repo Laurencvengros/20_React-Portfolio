@@ -32,6 +32,21 @@ const data = [
     description: "A social network API that uses Mongo DB as a database, Mongoose ODM, Express.JS and seeds data through insomnia.",
     view: "https://github.com/Laurencvengros/18_Social_Media_API"
   },
+  {
+    id: 5,
+    name: "Weather Dashboard",
+    description: "A Javascript application that uses the OpenWeather API so the user may search the forecast for any city they'd like",
+    view: "https://github.com/Laurencvengros/Weather_Dashboard",
+    deploy: "https://laurencvengros.github.io/Weather_Dashboard/"
+  },
+  {
+    id: 6,
+    name: "Team Profile Generator",
+    description: "A Node.js application that generates an HTML page that displays information from your terminal.",
+    view: "https://github.com/Laurencvengros/Team_Profile_Generator"
+  }
+  
+  
   
 ];  
 
@@ -72,7 +87,7 @@ const Projects = () => {
                               <Card.Text style={styles.textStyle}>({data.description})</Card.Text>
                               
                                 <a href={data.view}> <Button variant="dark" className='mt-auto' >View Code</Button></a> 
-                            
+                                <a href={data.deploy}> <Button variant="dark" className='mt-auto' >View Deployed App</Button></a> 
                           </Card.Body>
                       </Card>
                   </Col>
