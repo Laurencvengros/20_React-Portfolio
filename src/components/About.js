@@ -38,31 +38,31 @@ const About = () => {
               </div>
           </div>
         </div>
-        <div class="container">
-              <div class ="row ">
-                <div class="col-sm-4 align-self-start" id="skillsText">
-                  <h1 class="text-warning">Here are a few of the things I'm best at.</h1>
+        <div className="container">
+              <div className ="row ">
+                <div className="col-sm-4 align-self-start" id="skillsText">
+                  <h1 className="text-warning">Here are a few of the things I'm best at.</h1>
                 </div>
-                <div class="col-sm-8  order-last">
-                  <div class="wrap-circles">
+                <div className="col-sm-8  order-last">
+                  <div className="wrap-circles">
                             
-                    <div class="circle per-95">
-                      <div class="inner">HTML & CSS</div>
+                    <div className="circle per-95">
+                      <div className="inner">HTML & CSS</div>
                     </div>
-                    <div class="circle per-90">
-                      <div class="inner">JavaScript</div>
+                    <div className="circle per-90">
+                      <div className="inner">JavaScript</div>
                     </div>
-                    <div class="circle per-70">
-                      <div class="inner">Express JS</div>
+                    <div className="circle per-70">
+                      <div className="inner">Express JS</div>
                     </div>
-                    <div class="circle per-70">
-                      <div class="inner">Node JS</div>
+                    <div className="circle per-70">
+                      <div className="inner">Node JS</div>
                     </div>
-                    <div class="circle per-70">
-                      <div class="inner">SQL</div>
+                    <div className="circle per-70">
+                      <div className="inner">SQL</div>
                     </div>
-                    <div class="circle per-90">
-                      <div class="inner">REST APIs</div>
+                    <div className="circle per-90">
+                      <div className="inner">REST APIs</div>
                     </div>
                   </div>
                 </div>

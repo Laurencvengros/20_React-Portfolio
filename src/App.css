@@ -37,6 +37,11 @@
   }
 }
 
+/* .tab{
+  background-color: white
+} */
+
+
 .wrap-circles {
   display: flex;
   min-height: 50px;
