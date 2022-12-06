@@ -37,8 +37,17 @@
   }
 }
 
-.tab{
-  margin-right: 10px
+.navs{
+  margin-right: 10px;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px
+}
+
+.navHeader{
+  color: white;
+  font-size: 30px;
 }
 
 

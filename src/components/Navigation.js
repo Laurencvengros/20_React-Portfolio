@@ -23,45 +23,47 @@ function Navigation(){
   let c = {};
   let d = {};
   let e = {};
+  let f={}
   
   switch(currentLink){
   case 'home':
-   a= { backgroundColor: 'red'};
+   a= { color: '#ffbb00'};
    break;
   case 'about':
-   b= { backgroundColor: 'blue'};
+   b= { color: '#ffbb00'};
    break;
   case 'projects':
-   c= { backgroundColor: 'green'};
+   c= { color: '#ffbb00'};
    break;
   case 'resume':
-   d= { backgroundColor: 'yellow' };
+   d= { color: '#ffbb00' };
    break;
   case 'contact':
-   e= { backgroundColor: 'cyan'};
+   e= { color: '#ffbb00'};
    break;
   default:
-   a = {}
-}
+   f ={}
+  }
   
 
   
 
   return (
 
-    
+
+
    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Container>
-      <NavLink to="/home" style={a} onClick={() => setCurrentLink('home')}>Lauren Cvengros</NavLink>
+      <Container style={f}>
+      <NavLink to="/home" className='navHeader' style={a} onClick={() => setCurrentLink('home')}>Lauren Cvengros</NavLink>
          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto tab" >
               
-                <NavLink to="/about" style={b} onClick={() => setCurrentLink('about')}>About</NavLink>
+                <NavLink to="/about" className='navs' style={b} onClick={() => setCurrentLink('about')}>About</NavLink>
               
-                <NavLink to="/projects" style={c} onClick={() => setCurrentLink('projects')}>projects</NavLink>
-                <NavLink to="/resume" style={d} onClick={() => setCurrentLink('resume')}>Resume</NavLink>
-                <NavLink to="/contact" style={e} onClick={() => setCurrentLink('contact')}>Contact</NavLink>
+                <NavLink to="/projects" className='navs' style={c} onClick={() => setCurrentLink('projects')}>Projects</NavLink>
+                <NavLink to="/resume" className='navs' style={d} onClick={() => setCurrentLink('resume')}>Resume</NavLink>
+                <NavLink to="/contact" className='navs' style={e} onClick={() => setCurrentLink('contact')}>Contact</NavLink>
             </Nav>
           </Navbar.Collapse>
        </Container>
@@ -69,4 +71,5 @@ function Navigation(){
   );
 }
 
-export default Navigation
+
+export default Navigation;
