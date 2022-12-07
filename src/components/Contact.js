@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { validateEmail } from '../utils.js/helper';
+import { EmailValidator } from '../utils.js/helper';
 
 
 const styles ={
@@ -37,14 +37,14 @@ const Contact =() =>{
 
     function handleForm(e) {
         if (e.target.name === 'email'){
-            const validEmail = validateEmail(e.target.value);
+            const validEmail = EmailValidator(e.target.value);
             if(!validEmail){
                 setContactMessage('Please Emter A Valid Email');
             }else{
                 setContactMessage('');
             }
         }else{
-            if(!e.target.vaule.length){
+            if(!e.target.value.length){
                 const name = e.target.name;
                 setContactMessage(`${name.charAt(0).toUpperCase()+ name.slice(1)} cannot be blank`)
             }
