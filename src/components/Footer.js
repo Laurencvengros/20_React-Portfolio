@@ -10,7 +10,7 @@ function Footer() {
         <React.Fragment>
         <IconContext.Provider value={{ color: '#ffbb00', size: '2em' }}>
         <footer className="footer" >
-            <div style={{display: 'block',textAlign: 'center',lineHeight: '100px',marginTop: '220px',}}>
+            <div style={{display: 'block',textAlign: 'center',lineHeight: '100px',marginTop: '291px',}}>
                 <a style={{marginRight:"30px"}} href= 'mailto:l.cvengros@icloud.com'>
                      <FaEnvelope/>
                 </a>

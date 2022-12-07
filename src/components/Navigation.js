@@ -49,16 +49,16 @@ function Navigation(){
 
    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container style={f}>
-      <NavLink to="/home" className='navHeader' style={{a, textDecoration: 'none'}} onClick={() => setCurrentLink('home')}>Lauren Cvengros</NavLink>
+      <NavLink to="/home" className='navHeader' style={a} onClick={() => setCurrentLink('home')}>Lauren Cvengros</NavLink>
          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto tab" >
               
-                <NavLink  to="/about" className='navs' style={{b, textDecoration: 'none'}} onClick={() => setCurrentLink('about')}>About</NavLink>
+                <NavLink  to="/about" className='navs' style={b} onClick={() => setCurrentLink('about')} id='navText'>About</NavLink>
               
-                <NavLink to="/projects" className='navs' style={{c, textDecoration: 'none'}} onClick={() => setCurrentLink('projects')}>Projects</NavLink>
-                <NavLink to="/resume" className='navs' style={{d, textDecoration: 'none'}} onClick={() => setCurrentLink('resume')}>Resume</NavLink>
-                <NavLink to="/contact" className='navs' style={{e, textDecoration: 'none'}} onClick={() => setCurrentLink('contact')}>Contact</NavLink>
+                <NavLink to="/projects" className='navs' style={c} onClick={() => setCurrentLink('projects')} id='navText'>Projects</NavLink>
+                <NavLink to="/resume" className='navs' style={d} onClick={() => setCurrentLink('resume')} id='navText'>Resume</NavLink>
+                <NavLink to="/contact" className='navs' style={e} onClick={() => setCurrentLink('contact')} id='navText'>Contact</NavLink>
             </Nav>
           </Navbar.Collapse>
        </Container>
