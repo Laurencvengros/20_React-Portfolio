@@ -4,39 +4,6 @@ import Photo from '../assets/images/profile_pic.jpg';
 import ParticlesBg  from "particles-bg";
 import '../App.css'
 
-const styles={
-  avatar:{
-    width: '300px',
-    height: '400px',
-    marginTop: '100px',
-    fontWeight: '100px'
-  },
-
-  margins:{
-    marginTop: '100px',
-    fontSize: '20px'
-  },
-
-
-  skills:{
-    marginTop: '50px',
-    marginLeft: '50px'
-  },
-
-  skillsText:{
-    textAlign: 'center',
-    marginTop: '100px',
-   
-    
-
-  },
-  aboutText:{
-    marginTop: '50px',
-    textAlign: 'center',
-    fontSize: '50px',
-    
-  }
-}
 
 
 const About = () => {
@@ -44,22 +11,23 @@ const About = () => {
       <React.Fragment> 
      
     
-        <div className="container " >
+        <div className="container bg-light" style={{marginTop: '100px'}}>
           <ParticlesBg type="cobweb" bg={true} />
-          <h3 className="text-warning" style={styles.aboutText}> My name is Lauren Cvengros.</h3>
+          <h3 className="text-warning" style={{marginTop:'70px', textAlign:'center', fontSize: '50px'}}> My name is Lauren Cvengros.</h3>
             <div className="row ">
-              <div className="col-md-4 col-sm-12 order-sm-first order-last">
+              <div className="col-lg-5 col-md-6 col-sm-12 order-sm-first order-last">
                 
-                <div className="text-white-50 bg-white">
-                <img style={styles.avatar} src={Photo} alt="..."></img>
+                <div className="text-white-50">
+                <img style={{marginTop: '70px', marginBottom: '40px',  marginLeft:"40px", width: '300px', height: '400px',}} src={Photo} alt="..."></img>
                   
               
                 </div>
               </div>  
-              <div className="col-md-8 col-sm-12" style={styles.margins}>
+              <div className="col-lg-7 col-md-6 col-sm-12 text-dark" style={{marginTop: '70px', fontSize: '20px'}}>
                   <p> I am a 25 year old full stack web developer based in Grand Rapids, Michigan. I am a problem solver and a creative with an eye for detail specializing in building responsive, user friendly websites. </p>
-                  <p>I'm currently getting my training through Michigan State University's Web Development Bootcamp. I write my code primarily in JavaScript and also have experience with Node, Express, and SQL. I am always looking to expand my skillset and plan to further my knowledge to expand to any technology that will help me build even better apps</p>
-                  <p>I believe in addition to good development, good design is incredibly important, I like my websites to look as nice as they run. I work with React, HTML, CSS and Bootstrap to make that happen.</p>
+                  <p>I have a bachelor's degree from Michigan State University and am currently getting my Full Stack Web Development certificate though Michigan State. I am actively seeking employment as a Web Developer or related feild.
+                    When i'm not coding, I enjoy spending my free time outdoors; snowboarding or hiking, going to the gym and reading books.
+                  </p>
                   <p>I have a passion for learning and trying different things and love to take on new and challenging projects.</p>
               </div>
           </div>

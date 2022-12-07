@@ -7,12 +7,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import '../App.css'
 
-const styles ={
-  rightNav: {
-    paddingRight: '20px',
 
-  }
-}
 
 function Navigation(){
 

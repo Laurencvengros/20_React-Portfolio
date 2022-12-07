@@ -11,31 +11,6 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import emailjs from '@emailjs/browser';
 
 
-const styles ={
-    contactHeader:{
-        marginTop: '50px',
-        textAlign: 'center',
-        
-        
-        
-    },
-    hrStyle: {
-        height:'3px',
-        color: '#ffbb00',
-        backgroundColor: '#ffbb00',
-        width: '60%',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-    },
-    formStyle:{
-        marginLeft: '50px',
-        marginRight: 'auto',
-        marginTop: '100px'
-    }
-
-
-}
-
 const Contact =() =>{
 
     const [formState, setFormState] = useState({email: '', name: '', message: ''});
@@ -76,8 +51,8 @@ const Contact =() =>{
     return(
         <React.Fragment>
             <div>
-                <h1 style={styles.contactHeader}> Contact Me</h1>
-                <hr style={styles.hrStyle}/>
+                <h1 style={{marginTop: '50px', textAlign: 'center',}}> Contact Me</h1>
+                <hr style={{height:'3px',color: '#ffbb00',backgroundColor: '#ffbb00',width: '60%',marginLeft: 'auto',marginRight: 'auto',}}/>
             </div>
             <Container>
                 <Row>
@@ -129,7 +104,7 @@ const Contact =() =>{
 
                     <Col>
                     <h1 style={{  marginLeft: '200px', marginTop: '100px' }}>Contact Info</h1>
-                    <hr style={styles.hrStyle}/>
+                    <hr style={{height:'3px',color: '#ffbb00',backgroundColor: '#ffbb00',width: '60%',marginLeft: 'auto',marginRight: 'auto',}}/>
                         <div style={{marginLeft: '90px'}}>
                             <IconContext.Provider value={{ color: '#ffbb00', size: '2em' }}>
                                 <div>

@@ -69,47 +69,24 @@ const data = [
   
 ];  
 
-const styles ={
-  cardStyle: {
-    marginTop: '20px',
-    height: '30rem',
-    width: '20rem',
-    textAlign: 'center',
-    
-  },
-  textStyle: {
-    marginTop: '30px'
-      
-    
-  },
-  linkStyle: {
-   
-    marginTop: '30px'
-  },
-  wrapper: {
-    padding: '30px'
-  },
-  headerStyle:{
-    marginTop: '30px',
-    color: '#ffbb00'
-  }
-}
+
 
 const Projects = () => {
 
     return (
       <Container>
         <ParticlesBg type="cobweb" bg={true} />
-        <h1 style={styles.headerStyle} >Check out some of the things I've built</h1>
+        <h1 style={{marginTop: '50px', color:'#ffbb00', fontSize:'50px', marginLeft: '40px'}}>Check out some of the things I've built</h1>
+        <hr style={{height:'3px',color: '#ffbb00',backgroundColor: '#ffbb00',width: '90%'}}/>
           <Row>
               {data.map((data, k) => (
-                  <Col key={k} xs={12} md={6} lg={4} style={styles.wrapper}>
-                      <Card style={styles.cardStyle}>
+                  <Col key={k} xs={12} md={6} lg={4} style={{padding: '30px'}}>
+                      <Card style={{marginTop: '20px',height: '30rem',width: '20rem',textAlign: 'center',}}>
                           <Card.Img src={data.pic} />
 
                           <Card.Body >
-                              <Card.Title style={styles.textStyle}>{data.name}</Card.Title>
-                              <Card.Text style={styles.textStyle}>({data.description})</Card.Text>
+                              <Card.Title style={{marginTop: '30px'}}>{data.name}</Card.Title>
+                              <Card.Text style={{marginTop: '30px'}}>({data.description})</Card.Text>
                               
                                 <a href={data.view}> <Button variant="dark" className='mt-auto' >View Code</Button></a> 
                                 <a href={data.deploy}> <Button variant="dark" className='mt-auto' >View App</Button></a> 
