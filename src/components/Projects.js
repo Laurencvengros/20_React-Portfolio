@@ -88,6 +88,10 @@ const styles ={
   },
   wrapper: {
     padding: '30px'
+  },
+  headerStyle:{
+    marginTop: '30px',
+    color: '#ffbb00'
   }
 }
 
@@ -96,6 +100,7 @@ const Projects = () => {
     return (
       <Container>
         <ParticlesBg type="cobweb" bg={true} />
+        <h1 style={styles.headerStyle} >Check out some of the things I've built</h1>
           <Row>
               {data.map((data, k) => (
                   <Col key={k} xs={12} md={6} lg={4} style={styles.wrapper}>

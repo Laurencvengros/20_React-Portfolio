@@ -15,9 +15,10 @@ const styles={
         textAlign: 'center',
         marginTop: '100px',
        
-        
-    
-      },
+    },
+    resumeText: {
+        textAlign: 'center'
+    }
 }
 
 const Resume = () =>{
@@ -30,7 +31,7 @@ const Resume = () =>{
                 <ParticlesBg type="cobweb" bg={true} />
                 <div className ="row ">
                     <div className=" col-sm-12" style={styles.skillsText}>
-                        <h1 className="text-warning">Here are a few of the things I'm best at.</h1>
+                        <h1>Here are a few of the things I'm best at.</h1>
                     </div>
                     
                     <div className="col-sm-12  order-last" style={styles.skills}>
@@ -64,6 +65,7 @@ const Resume = () =>{
             <MDBContainer className="mt-5">
       <MDBRow>
         <MDBCol md="12">
+            <h1 style={styles.resumeText}> Download My Resume</h1>
           <embed id="Resume" src={myResume} width="100%" height="750px" />
         </MDBCol>
       </MDBRow>

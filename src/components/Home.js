@@ -20,7 +20,7 @@ const Home = () => {
         
         
             <div style={styles.homeText} >
-                <h1 style={{ fontSize: "70px" }} >Hi,</h1>
+                <h1 style={{ fontSize: "70px" }}  >Hi,</h1>
                 <h1 style={{ fontSize: "70px"}} >My Name is Lauren</h1>
                 <h3 style={{ fontSize: "40px" }}> I am a Full Stack Developer</h3>
             </div>
