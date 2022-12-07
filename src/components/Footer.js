@@ -9,13 +9,13 @@ function Footer() {
     return (
         <React.Fragment>
         <IconContext.Provider value={{ color: '#ffbb00', size: '2em' }}>
-        <footer class="footer" >
-            <div >
-                <a href= 'mailto:l.cvengros@icloud.com'>
+        <footer className="footer" >
+            <div style={{display: 'block',textAlign: 'center',lineHeight: '100px',marginTop: '220px',}}>
+                <a style={{marginRight:"30px"}} href= 'mailto:l.cvengros@icloud.com'>
                      <FaEnvelope/>
                 </a>
             
-                <a  href= 'https://github.com/Laurencvengros'>
+                <a style={{marginRight:"30px"}}  href= 'https://github.com/Laurencvengros'>
                      <FaGithub/> 
                 </a>
             
