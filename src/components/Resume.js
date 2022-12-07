@@ -43,6 +43,7 @@ const Resume = () =>{
                         </div>
                         </div>
                     </MDBCol>
+                    
                 </MDBRow>
             </MDBContainer>
             <MDBContainer className="mt-5">
