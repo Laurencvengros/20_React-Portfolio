@@ -4,7 +4,21 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { validateEmail } from '../utils.js/helper';
 
+function contactForm(){
+    const [formState, setFormState] = useState({email: '', name: '', message: ''});
+    const [contactMessage, setContactMessage]= useState('');
 
+    function handleEmail(e) {
+        if (e.target.name === 'email'){
+            const validEmail = validateEmail(e.target.value);
+            if(!validEmail){
+                setContactMessage('Please Emter A Valid Email');
+            }else{
+                setContactMessage('')
+            }
+        }
+    }
+}
 
 const styles ={
     contactHeader:{
