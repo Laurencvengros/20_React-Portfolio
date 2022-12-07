@@ -106,3 +106,10 @@
   font-weight: 300;
   color: rgb(255, 187, 0);
 }
+
+.footer {
+  background-color: #212529;
+  position: relative;
+  margin-top: 270px;
+  height:70px
+}

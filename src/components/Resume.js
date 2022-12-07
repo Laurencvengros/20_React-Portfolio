@@ -51,7 +51,7 @@ const Resume = () =>{
         <MDBCol md="12">
             <h1 style={{textAlign: 'center'}}> Download My Resume</h1>
             <hr style={{height:'3px',color: '#ffbb00',backgroundColor: '#ffbb00',width: '60%',marginLeft: 'auto',marginRight: 'auto', marginBottom: '20px'}}/>
-          <embed id="Resume" src={myResume} width="100%" height="750px" />
+          <embed id="Resume" src={myResume} width="100%" height="750px" style={{marginBottom: '100px'}}/>
         </MDBCol>
         <MDBCol>
             
