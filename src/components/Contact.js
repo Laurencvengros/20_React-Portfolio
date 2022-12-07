@@ -4,21 +4,6 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { validateEmail } from '../utils.js/helper';
 
-function contactForm(){
-    const [formState, setFormState] = useState({email: '', name: '', message: ''});
-    const [contactMessage, setContactMessage]= useState('');
-
-    function handleEmail(e) {
-        if (e.target.name === 'email'){
-            const validEmail = validateEmail(e.target.value);
-            if(!validEmail){
-                setContactMessage('Please Emter A Valid Email');
-            }else{
-                setContactMessage('')
-            }
-        }
-    }
-}
 
 const styles ={
     contactHeader:{
@@ -46,6 +31,24 @@ const styles ={
 }
 
 const Contact =() =>{
+
+    const [formState, setFormState] = useState({email: '', name: '', message: ''});
+    const [contactMessage, setContactMessage]= useState('');
+
+    function handleEmail(e) {
+        if (e.target.name === 'email'){
+            const validEmail = validateEmail(e.target.value);
+            if(!validEmail){
+                setContactMessage('Please Emter A Valid Email');
+            }else{
+                setContactMessage('')
+            }
+        }
+
+        if(!contactMessage){
+            setFormState({ ...formState, [e.target.name]: e.target.value})
+        }
+    }
     return(
         <React.Fragment>
             <div>
@@ -61,7 +64,8 @@ const Contact =() =>{
                                 <Form.Control 
                                     type="text"
                                     placeholder="Your Name"
-                                    name="sender_name"
+                                    required name="name" 
+                                    onBlur={handleEmail}
                                 ></Form.Control>
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formBasicEmail">
