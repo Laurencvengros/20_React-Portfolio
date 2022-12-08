@@ -125,3 +125,10 @@
   margin-bottom: 30px;
   margin-top: 20px
 }
+
+.test{
+  background: radial-gradient(closest-side, #b8b7b7, #e1e2e1 , #ffffff); 
+ 
+
+  /* box-shadow: 5px 5px 40px 30px inset rgba(0,0 ,0,0.2); */
+}

@@ -13,8 +13,8 @@ const Resume = () =>{
                             <h1>Here are a few of the things I'm best at.</h1>
                             <hr style={{height:'3px',color: '#ffbb00',backgroundColor: '#ffbb00',width: '60%',marginLeft: 'auto',marginRight: 'auto',}}/>
                         </div>
-            <MDBContainer className="mt-5">
-                <ParticlesBg type="cobweb" bg={true} />
+            <MDBContainer className="test">
+            <ParticlesBg type="cobweb" bg={true} />
                 <MDBRow>
                     <MDBCol md="12">
                         <div className="col-sm-12  order-last" style={{marginTop: '50px',marginLeft: '50px'}}>
@@ -46,7 +46,7 @@ const Resume = () =>{
                     
                 </MDBRow>
             </MDBContainer>
-            <MDBContainer className="mt-5">
+            <MDBContainer className="mt-4">
       <MDBRow>
         <MDBCol md="12">
             <h1 style={{textAlign: 'center'}}> Download My Resume</h1>
