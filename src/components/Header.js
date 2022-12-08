@@ -5,7 +5,7 @@ import Navigation from './Navigation';
 import Projects from './Projects';
 import Resume from './Resume'
 import Contact from './Contact'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route,  } from 'react-router-dom';
 
 
 const Header = () =>{
@@ -14,7 +14,7 @@ const Header = () =>{
         <Router>
             <Navigation />
             <Routes>
-            <Route path="/"  element={<About/>}/>
+            <Route path="/20_React-Portfolio"  element={<Home/>}/>
             <Route path="/about"  element={<About/>}/>
             <Route path="/home"  element={<Home/>}/>
             <Route path="/projects"  element={<Projects/>}/>
