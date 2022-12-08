@@ -23,22 +23,23 @@ function Navigation(){
   switch(currentLink){
   case 'home':
    a= { color: '#ffbb00'};
-   b= { color: 'white'};
+   
    break;
   case 'about':
    b= { color: '#ffbb00'};
+   a= { color: 'white'};
    break;
   case 'projects':
    c= { color: '#ffbb00'};
-   b= { color: 'white'};
+   a= { color: 'white'};
    break;
   case 'resume':
    d= { color: '#ffbb00' };
-   b= { color: 'white'};
+   a= { color: 'white'};
    break;
   case 'contact':
    e= { color: '#ffbb00'};
-   b= { color: 'white'};
+   a= { color: 'white'};
    break;
   default:
    f ={}
@@ -58,7 +59,7 @@ function Navigation(){
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto tab" >
               
-                <NavLink  to="/about" className='navAbout' style={b} onClick={() => setCurrentLink('about')} id='navText'>About</NavLink>
+                <NavLink  to="/about" className='navs' style={b} onClick={() => setCurrentLink('about')} id='navText'>About</NavLink>
               
                 <NavLink to="/projects" className='navs' style={c} onClick={() => setCurrentLink('projects')} id='navText'>Projects</NavLink>
                 <NavLink to="/resume" className='navs' style={d} onClick={() => setCurrentLink('resume')} id='navText'>Resume</NavLink>
