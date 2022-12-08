@@ -23,18 +23,22 @@ function Navigation(){
   switch(currentLink){
   case 'home':
    a= { color: '#ffbb00'};
+   b= { color: 'white'};
    break;
   case 'about':
    b= { color: '#ffbb00'};
    break;
   case 'projects':
    c= { color: '#ffbb00'};
+   b= { color: 'white'};
    break;
   case 'resume':
    d= { color: '#ffbb00' };
+   b= { color: 'white'};
    break;
   case 'contact':
    e= { color: '#ffbb00'};
+   b= { color: 'white'};
    break;
   default:
    f ={}
@@ -49,12 +53,12 @@ function Navigation(){
 
    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container style={f}>
-      <NavLink to="/home" className='navHeader' style={a} onClick={() => setCurrentLink('home')}>Lauren Cvengros</NavLink>
+      <NavLink to="/home" className='navHeader' style={a} onClick={() => setCurrentLink('home')} id='navText'>Lauren Cvengros</NavLink>
          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto tab" >
               
-                <NavLink  to="/about" className='navs' style={b} onClick={() => setCurrentLink('about')} id='navText'>About</NavLink>
+                <NavLink  to="/about" className='navAbout' style={b} onClick={() => setCurrentLink('about')} id='navText'>About</NavLink>
               
                 <NavLink to="/projects" className='navs' style={c} onClick={() => setCurrentLink('projects')} id='navText'>Projects</NavLink>
                 <NavLink to="/resume" className='navs' style={d} onClick={() => setCurrentLink('resume')} id='navText'>Resume</NavLink>

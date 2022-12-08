@@ -86,7 +86,7 @@ const Projects = () => {
 
                           <Card.Body >
                               <Card.Title style={{marginTop: '30px'}}>{data.name}</Card.Title>
-                              <Card.Text style={{marginTop: '30px'}}>({data.description})</Card.Text>
+                              <Card.Text style={{marginTop: '30px'}}>{data.description}</Card.Text>
                               
                                 <a href={data.view}> <Button variant="dark" className='mt-auto' >View Code</Button></a> 
                                 <a href={data.deploy}> <Button variant="dark" className='mt-auto' >View App</Button></a> 
