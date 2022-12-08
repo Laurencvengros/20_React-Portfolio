@@ -1,5 +1,6 @@
 {
-  "name": "portfolio",
+  "homepage": "Laurencvengros.github.io/React_Portfolio",
+  "name": "React_Portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
