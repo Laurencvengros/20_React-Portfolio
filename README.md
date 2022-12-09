@@ -3,6 +3,7 @@
 
 Deployed Application:
 
+https://laurencvengros.github.io/20_React-Portfolio/
 
 
 ## Table-of-Contents
