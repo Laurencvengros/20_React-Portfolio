@@ -12,6 +12,13 @@ import ecommerce from '../assets/images/ecommerce.jpg';
 import socialMedia from '../assets/images/GET_users.jpg';
 import weatherDashboard from '../assets/images/weather.jpg';
 import teamApp from '../assets/images/team.jpg';
+import WebFont from 'webfontloader';
+
+WebFont.load({
+    google: {
+      families: ['Anton', 'Montserrat']
+    }
+  });
 
 
 const data = [
@@ -76,7 +83,7 @@ const Projects = () => {
     return (
       <Container>
         <ParticlesBg type="cobweb" bg={true} />
-        <h1 style={{marginTop: '50px', color:'#ffbb00', fontSize:'50px', marginLeft: '40px'}}>Check out some of the things I've built</h1>
+        <h1 style={{marginTop: '50px', color:'#000', fontSize:'50px', marginLeft: '40px', fontFamily:'Anton'}}>Check out some of the things I've built</h1>
         <hr style={{height:'3px',color: '#ffbb00',backgroundColor: '#ffbb00',width: '90%'}}/>
           <Row>
               {data.map((data, k) => (
@@ -85,11 +92,11 @@ const Projects = () => {
                           <Card.Img src={data.pic} />
 
                           <Card.Body >
-                              <Card.Title style={{marginTop: '30px'}}>{data.name}</Card.Title>
-                              <Card.Text style={{marginTop: '30px'}}>{data.description}</Card.Text>
+                              <Card.Title style={{marginTop: '30px', fontFamily:'Anton'}}>{data.name}</Card.Title>
+                              <Card.Text style={{marginTop: '30px',fontFamily:'Montserrat'}}>{data.description}</Card.Text>
                               
-                                <a href={data.view}> <Button variant="dark" className='mt-auto' >View Code</Button></a> 
-                                <a href={data.deploy}> <Button variant="dark" className='mt-auto' >View App</Button></a> 
+                                <a href={data.view}> <Button style={{fontFamily:'Montserrat'}} variant="dark" className='mt-auto' >View Code</Button></a> 
+                                <a href={data.deploy}> <Button style={{fontFamily:'Montserrat'}} variant="dark" className='mt-auto' >View App</Button></a> 
                           </Card.Body>
                       </Card>
                   </Col>

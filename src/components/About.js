@@ -3,6 +3,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Photo from '../assets/images/profile_pic.jpg';
 import ParticlesBg  from "particles-bg";
 import '../App.css'
+import WebFont from 'webfontloader';
+
+WebFont.load({
+    google: {
+      families: ['Anton', 'Montserrat']
+    }
+  });
 
 
 
@@ -13,7 +20,7 @@ const About = () => {
     
         <div className="container bg-light" style={{marginTop: '100px'}}>
           <ParticlesBg type="cobweb" bg={true} />
-          <h3 className="text-warning" style={{marginTop:'70px', textAlign:'center', fontSize: '50px'}}> My name is Lauren Cvengros.</h3>
+          <h3 className="text-warning" style={{marginTop:'70px', textAlign:'center', fontSize: '50px', fontFamily: 'Anton'}}> My name is Lauren Cvengros.</h3>
             <div className="row ">
               <div className="col-lg-5 col-md-6 col-sm-12 order-sm-first order-last">
                 
@@ -23,7 +30,7 @@ const About = () => {
               
                 </div>
               </div>  
-              <div className="col-lg-7 col-md-6 col-sm-12 text-dark" style={{marginTop: '70px', fontSize: '20px'}}>
+              <div className="col-lg-7 col-md-6 col-sm-12 text-dark" style={{marginTop: '70px', fontSize: '20px', fontFamily: 'Montserrat'}}>
                   <p> I am a 25 year old full stack web developer based in Grand Rapids, Michigan. I am a problem solver and a creative with an eye for detail specializing in building responsive, user friendly websites. </p>
                   <p>I have a bachelor's degree from Michigan State University and am currently getting my Full Stack Web Development certificate though Michigan State. I am actively seeking employment as a Web Developer or related feild.
                     When i'm not coding, I enjoy spending my free time outdoors; snowboarding or hiking, going to the gym and reading books.

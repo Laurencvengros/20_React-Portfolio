@@ -9,6 +9,14 @@ import { EmailValidator } from '../utils.js/helper';
 import { IconContext } from "react-icons";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import emailjs from '@emailjs/browser';
+import WebFont from 'webfontloader';
+
+WebFont.load({
+    google: {
+      families: ['Anton', 'Montserrat']
+    }
+  });
+
 
 
 const Contact =() =>{
@@ -51,7 +59,7 @@ const Contact =() =>{
     return(
         <React.Fragment>
             <div>
-                <h1 style={{marginTop: '50px', textAlign: 'center',}}> Contact Me</h1>
+                <h1 style={{marginTop: '50px', textAlign: 'center',fontFamily: 'Anton', fontSize: '60px'}}> Contact Me</h1>
                 <hr style={{height:'3px',color: '#ffbb00',backgroundColor: '#ffbb00',width: '60%',marginLeft: 'auto',marginRight: 'auto',}}/>
             </div>
             <Container>
@@ -61,7 +69,7 @@ const Contact =() =>{
                             <Card.Body>
                                 <Form onSubmit={emailSender} ref={form}> 
                                     <Form.Group controlId="name">
-                                        <Form.Label>Name</Form.Label>
+                                        <Form.Label style={{fontFamily:'Montserrat', marginBottom:'12px', fontWeight:'bold'}}>Name</Form.Label>
                                             <Form.Control 
                                                 type="text"
                                                 placeholder="Your Name"
@@ -70,7 +78,7 @@ const Contact =() =>{
                                             />
                                         </Form.Group>
                                         <Form.Group className="mb-3" controlId="formBasicEmail">
-                                        <Form.Label>Email address</Form.Label>
+                                        <Form.Label style={{fontFamily:'Montserrat', marginBottom:'12px', marginTop:'15px',fontWeight:'bold'}}>Email address</Form.Label>
                                         <Form.Control
                                             required name="email"
                                         type="email" 
@@ -80,7 +88,7 @@ const Contact =() =>{
                                         <Form.Text className="text-muted"></Form.Text>
                                     </Form.Group>
                                     <Form.Group className="mb-3" controlId="message">
-                                        <Form.Label>Message</Form.Label>
+                                        <Form.Label style={{fontFamily:'Montserrat', fontWeight:'bold'}}>Message</Form.Label>
                                         <Form.Control
                                             required name="message"
                                             type="text"
@@ -94,7 +102,7 @@ const Contact =() =>{
 
                                     {contactMessage && <p >{contactMessage}</p>}
 
-                                    <Button style={{marginLeft: '170px', marginTop: '40px'}} variant="warning" type="submit" size="lg">
+                                    <Button style={{marginLeft: '150px', marginTop: '40px',fontFamily: 'Anton', fontSize:'30px'}} variant="warning" type="submit" size="lg">
                                         Submit
                                     </Button>
                                 </Form>
@@ -103,26 +111,26 @@ const Contact =() =>{
                     </Col>
 
                     <Col>
-                    <h1 style={{  marginLeft: '200px', marginTop: '100px' }}>Contact Info</h1>
+                    <h1 style={{  marginLeft: '200px', marginTop: '100px',fontFamily: 'Anton' }}>Contact Info</h1>
                     <hr style={{height:'3px',color: '#ffbb00',backgroundColor: '#ffbb00',width: '60%',marginLeft: 'auto',marginRight: 'auto',}}/>
                         <div style={{marginLeft: '90px'}}>
                             <IconContext.Provider value={{ color: '#ffbb00', size: '2em' }}>
                                 <div>
                                     <a style={{  color: 'black'}} href= 'mailto:l.cvengros@icloud.com'>
                                         
-                                    <h3 style={{  marginLeft: '10px', marginTop: '50px', color: 'black'}}> <FaEnvelope/> L.Cvengros@icloud.com</h3>
+                                    <h3 style={{  marginLeft: '10px', marginTop: '50px', color: 'black', fontFamily: 'Montserrat'}}> <FaEnvelope/> L.Cvengros@icloud.com</h3>
                                     </a>
                                 </div>
                                 <div>
                                     <a style={{  color: 'black'}} href= 'https://github.com/Laurencvengros'>
                                         
-                                    <h3 style={{  marginLeft: '10px', marginTop: '50px', color: 'black'}}> <FaGithub/> Laurencvengros</h3>
+                                    <h3 style={{  marginLeft: '10px', marginTop: '50px', color: 'black', fontFamily: 'Montserrat'}}> <FaGithub/> Laurencvengros</h3>
                                     </a>
                                 </div>
                                 <div>
                                     <a style={{  color: 'black'}} href= 'https://www.linkedin.com/in/lauren-cvengros-a00957249/'>
                                         
-                                    <h3 style={{  marginLeft: '10px', marginTop: '50px', color: 'black'}}> <FaLinkedin/> lauren-cvengros-a00957249</h3>
+                                    <h3 style={{  marginLeft: '10px', marginTop: '50px', color: 'black', fontFamily: 'Montserrat'}}> <FaLinkedin/> lauren-cvengros-a00957249</h3>
                                     </a>
                                 </div>
                             </IconContext.Provider>

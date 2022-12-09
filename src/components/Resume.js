@@ -3,21 +3,36 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ParticlesBg  from "particles-bg";
 import '../App.css';
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
-import myResume from '../assets/images/resume.pdf'
+import myResume from '../assets/images/resume.pdf';
+import WebFont from 'webfontloader';
+
+WebFont.load({
+    google: {
+      families: ['Anton', 'Montserrat']
+    }
+  });
+
 
 
 const Resume = () =>{
     return(
         <React.Fragment> 
-            <div className=" col-sm-12" style={{textAlign: 'center',marginTop: '100px'}}>
-                            <h1>Here are a few of the things I'm best at.</h1>
-                            <hr style={{height:'3px',color: '#ffbb00',backgroundColor: '#ffbb00',width: '60%',marginLeft: 'auto',marginRight: 'auto',}}/>
+            
+            <MDBContainer>
+                <MDBRow>
+                    <MDBCol md="12">
+                        <div  style={{marginTop: '100px', color:'#000', fontFamily:'Anton'}}>
+                            <h1 style={{fontSize:'60px',}}>Here are a few of the things I'm best at.</h1>
+                            <hr style={{height:'3px',color: '#ffbb00',backgroundColor: '#ffbb00',width: '70%',marginLeft: '5px'}}/>
                         </div>
+                    </MDBCol>
+                </MDBRow>
+            </MDBContainer>
             <MDBContainer className="test">
             <ParticlesBg type="cobweb" bg={true} />
                 <MDBRow>
                     <MDBCol md="12">
-                        <div className="col-sm-12  order-last" style={{marginTop: '50px',marginLeft: '50px'}}>
+                        <div className="col-sm-12  order-last" style={{marginTop: '100px', fontFamily:'Montserrat',  marginLeft: '-80px'}}>
                         <div className="wrap-circles">
                             <div className="circle per-95">
                                 <div className="inner">HTML & CSS</div>
@@ -47,17 +62,14 @@ const Resume = () =>{
                 </MDBRow>
             </MDBContainer>
             <MDBContainer className="mt-4">
-      <MDBRow>
-        <MDBCol md="12">
-            <h1 style={{textAlign: 'center'}}> Download My Resume</h1>
-            <hr style={{height:'3px',color: '#ffbb00',backgroundColor: '#ffbb00',width: '60%',marginLeft: 'auto',marginRight: 'auto', marginBottom: '20px'}}/>
-          <embed id="Resume" src={myResume} width="100%" height="750px" style={{marginBottom: '100px'}}/>
-        </MDBCol>
-        <MDBCol>
-            
-        </MDBCol>
-      </MDBRow>
-    </MDBContainer>
+                <MDBRow>
+                    <MDBCol md="12">
+                        <h1 style={{fontSize:'60px',marginTop: '10px', color:'#000',  marginLeft: '10px', fontFamily:'Anton'}}> Download My Resume</h1>
+                        <hr style={{height:'3px',color: '#ffbb00',backgroundColor: '#ffbb00',width: '60%',marginLeft: '5px'}}/>
+                        <embed id="Resume" src={myResume} width="100%" height="750px" style={{marginBottom: '100px'}}/>
+                    </MDBCol>
+                </MDBRow>
+            </MDBContainer>
         </React.Fragment> 
     )
 }

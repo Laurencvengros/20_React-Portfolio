@@ -42,13 +42,20 @@
   color: white;
   font-size: 20px;
   margin-bottom: 30px;
-  margin-top: 20px
+  margin-top: 20px;
+  font-family: 'Montserrat';
 }
+
 
 .navHeader{
   color: #ffbb00;
   font-size: 30px;
+  font-family: 'Montserrat';
   
+}
+
+#navText:hover{
+  color: #ffbb00;
 }
 
 
@@ -133,3 +140,4 @@
 
   /* box-shadow: 5px 5px 40px 30px inset rgba(0,0 ,0,0.2); */
 }
+
