@@ -27,7 +27,7 @@ const data = [
     name: "Level Up Fitness",
     description: "A full stack application to plan your workouts using Node, Express, MySql and Handlebars to build RESTful APIs",
     view: "https://github.com/Laurencvengros/Project_2",
-    deploy: "https://github.com/Laurencvengros/Project_2",
+    deploy: "https://radiant-falls-27528.herokuapp.com/",
     pic: levelUp
   },
   {
