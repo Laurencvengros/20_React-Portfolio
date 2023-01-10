@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import  Container from 'react-bootstrap/Container';
 import levelUp from '../assets/images/level_up.jpg';
+import cms from '../assets/images/cms'
 import jate from '../assets/images/jate.jpg';
 import ecommerce from '../assets/images/ecommerce.jpg';
 import socialMedia from '../assets/images/GET_users.jpg';
@@ -22,8 +23,16 @@ WebFont.load({
 
 
 const data = [
-  {
+   {
     id: 1,
+    name: "Level Up Fitness",
+    description: "A full stack application client management system using React, GraphQl and Apollo where the user can manage their clients and their calendar",
+    view: "https://github.com/Laurencvengros/Salon-cms",
+    deploy: "https://vast-shore-74918.herokuapp.com/",
+    pic: cms
+  },
+  {
+    id: 2,
     name: "Level Up Fitness",
     description: "A full stack application to plan your workouts using Node, Express, MySql and Handlebars to build RESTful APIs",
     view: "https://github.com/Laurencvengros/Project_2",
@@ -31,7 +40,7 @@ const data = [
     pic: levelUp
   },
   {
-    id: 2,
+    id: 3,
     name: "JATE Text Editor",
     description: "A text editor appliaction that meets PWA criteria and runs both online and offline.",
     view: "https://pacific-thicket-62202.herokuapp.com/",
@@ -39,7 +48,7 @@ const data = [
     pic: jate
   },
   {
-    id: 3,
+    id: 4,
     name: "ORM E-Commerce",
     description: "A node.js application that uses and Express.js server and MySQL database for a backend Ecommerce site. ",
     view: "https://github.com/Laurencvengros/ORM_E-Commerce",
@@ -47,7 +56,7 @@ const data = [
     pic: ecommerce
   },
   {
-    id: 4,
+    id: 5,
     name: "Social Media App",
     description: "A social network API that uses Mongo DB as a database, Mongoose ODM, Express.JS and seeds data through insomnia.",
     view: "https://github.com/Laurencvengros/18_Social_Media_API",
@@ -56,7 +65,7 @@ const data = [
 
   },
   {
-    id: 5,
+    id: 6,
     name: "Weather Dashboard",
     description: "A Javascript application that uses the OpenWeather API so the user may search the forecast for any city they'd like",
     view: "https://github.com/Laurencvengros/Weather_Dashboard",
@@ -64,7 +73,7 @@ const data = [
     pic: weatherDashboard
   },
   {
-    id: 6,
+    id: 7,
     name: "Team Profile Generator",
     description: "A Node.js application that generates an HTML page that displays information from your terminal.",
     view: "https://github.com/Laurencvengros/Team_Profile_Generator",
