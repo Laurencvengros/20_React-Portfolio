@@ -35,7 +35,7 @@ const About = () => {
                   <p>I have a bachelor's degree from Michigan State University and am currently getting my Full Stack Web Development certificate though Michigan State. I am actively seeking employment as a Web Developer or related feild.
                     When i'm not coding, I enjoy spending my free time outdoors; snowboarding or hiking, going to the gym and reading books.
                   </p>
-                  <p>I have a passion for learning and trying different things and love to take on new and challenging projects.</p>
+                  <p>I have a passion for expanding my knowledge and love to take on new and challenging projects.</p>
               </div>
           </div>
         </div>
