@@ -72,14 +72,7 @@ const data = [
     deploy: "https://laurencvengros.github.io/Weather_Dashboard/",
     pic: weatherDashboard
   },
-  {
-    id: 7,
-    name: "Team Profile Generator",
-    description: "A Node.js application that generates an HTML page that displays information from your terminal.",
-    view: "https://github.com/Laurencvengros/Team_Profile_Generator",
-    deploy: "https://github.com/Laurencvengros/Team_Profile_Generator",
-    pic: teamApp
-  }
+ 
   
   
   
