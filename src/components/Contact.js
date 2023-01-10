@@ -65,7 +65,7 @@ const Contact =() =>{
             <Container>
                 <Row>
                     <Col>
-                        <Card style={{ width: '30rem', height: '30rem', marginLeft: '100px', marginTop: '100px' }}>
+                        <Card style={{ width: '30rem', height: '30rem', marginLeft: '20px', marginTop: '100px' }}>
                             <Card.Body>
                                 <Form onSubmit={emailSender} ref={form}> 
                                     <Form.Group controlId="name">

@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import  Container from 'react-bootstrap/Container';
 import levelUp from '../assets/images/level_up.jpg';
-import cms from '../assets/images/cms'
+import cms from '../assets/images/cms.jpg'
 import jate from '../assets/images/jate.jpg';
 import ecommerce from '../assets/images/ecommerce.jpg';
 import socialMedia from '../assets/images/GET_users.jpg';
