@@ -25,7 +25,7 @@ WebFont.load({
 const data = [
    {
     id: 1,
-    name: "Level Up Fitness",
+    name: "Level Up Fitness" ,
     description: "A full stack application client management system using React, GraphQl and Apollo where the user can manage their clients and their calendar",
     view: "https://github.com/Laurencvengros/Salon-cms",
     deploy: "https://vast-shore-74918.herokuapp.com/",
