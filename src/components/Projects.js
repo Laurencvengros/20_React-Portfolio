@@ -92,7 +92,7 @@ const Projects = () => {
     return (
       <Container>
         <ParticlesBg type="cobweb" bg={true} />
-        <h1 style={{marginTop: '50px', color:'#000', fontSize:'50px', marginLeft: '40px', fontFamily:'Anton'}}>Check out some of the things I've built</h1>
+        <h1 style={{marginTop: '50px', color:'#000', fontSize:'50px', marginLeft: '40px', fontFamily:'Anton'}}>Check out some of the things I've built.</h1>
         <hr style={{height:'3px',color: '#ffbb00',backgroundColor: '#ffbb00',width: '90%'}}/>
           <Row>
               {data.map((data, k) => (
