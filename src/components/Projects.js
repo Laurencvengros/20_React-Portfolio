@@ -101,7 +101,7 @@ const Projects = () => {
                           <Card.Img src={data.pic} />
 
                           <Card.Body >
-                              <Card.Title style={{marginTop: '30px', fontFamily:'Anton'}}>{data.name}</Card.Title>
+                              <Card.Title style={{marginTop: '30px', fontFamily:'Anton'}}>{data.name} </Card.Title>
                               <Card.Text style={{marginTop: '30px',fontFamily:'Montserrat'}}>{data.description}</Card.Text>
                               
                                 <a href={data.view}> <Button style={{fontFamily:'Montserrat'}} variant="dark" className='mt-auto' >View Code</Button></a> 
